@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    display: inline;
+    margin-top: 15px;
+    margin-left: 8px;
+
+}
+h3{
+    margin-top: 9px;
+    margin-left: 15px;
+}
+
+#block{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: auto;
+
+
+}
+
+#cont{
+    display: flex;
+    height: 60vh;
+    width: 100%;
+    flex-wrap: wrap;
+
+
+}
+
+#check{
+    display: flex;
+    flex-direction: column;
+    width: 31%;
+
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+
+}
+#re{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+
+}
+
+#header{
+    display: flex;
+    width: auto;
+    height: 6vh;
+    text-align: left;
+    line-height: 1;
+    font-size: 1.5vw;
+    grid-template-rows: 1.9em;
+    padding: 8px;
+    text-indent: 2em; 
+    height: 6vh;
+    color: pink;
+    background: #333;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25vh;
+    font-family: "Oswald", sans-serif;
+}
+
+#pages{
+    display: flex;
+    width: 20vw;
+    height: 100vh;
+    text-indent: 1em;
+    font-size: 0.7em;
+    line-height: 3.4em;
+    padding-right: 20px;
+    justify-content: start;  
+    text-align: center;
+    background: pink;
+    color: #79089c;
+    font-family: "Playfair Display", sans-serif;
+    overflow-wrap: break-word;
+}
+
+li :hover{
+    color: #4d0224;
+}
+
+#imgs{
+
+    display: flex;
+    width: 69%;
+    justify-content: center;
+    background: #d40d6a;
+
+}
+
+#imgs img
+{
+    padding: 2%;
+    width: 20vw;
+    height: 55vh;
+}
+
+#gif{
+
+    display: flex;
+    height: 23vh;
+    padding: 8px; 
+    justify-content: center;  
+    object-fit: cover; 
+    background: #2b0b23;
+    object-fit: cover
+}
+
+#gif img{
+    height: auto;
+    width: 100%;
+}
+
+#link{
+    display: flex; 
+    height: 30vh; 
+    padding: 10px; 
+    justify-content: center;  
+    object-fit: cover;  
+    background: hsl(316, 40%, 35%);
+    object-fit: cover; 
+}
+
+#link img{
+    height: auto;
+    width: 100%;
+}
+
+#text{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto; 
+    overflow-wrap: break-word;
+
+}
