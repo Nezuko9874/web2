@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+*{
+    margin: 0;
+    padding: 0 ;
+}
+p{
+    margin-top: 15px;
+    margin-left: 8px;
+
+}
+h3{
+    margin-top: 10px;
+    margin-left: 15px;
+}
+.hed{
+    display: grid;
+    grid-template-columns: 0.6fr 2fr 1fr;
+    grid-template-areas: 
+    "header header header "
+    "pages img link"
+    "pages img sources"
+    "pages text text";
+} 
+
+.header{
+    display: grid;
+    grid-area: header;
+    text-align: left;
+    line-height: 1;
+    font-size: 1.6vw;
+    grid-template-rows: 1.9em;
+    padding: 8px;
+    text-indent: 2em; 
+    max-height: 70px;
+    color: pink;
+    background: #333;
+    background-image: url(https://www.blackpinkmusic.com/files/2022/08/logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25vh;
+    font-family: "Oswald", sans-serif;
+}
+
+
+.pages{
+    display: grid;
+    grid-area: pages;
+    text-indent: 1em;
+    font-size: 1em;
+    line-height: 3.4em;
+    padding-right: 20px;
+    grid-column: 1/2;
+    justify-content: start;  
+    text-align: center;
+    background: pink;
+    color: #79089c;
+    font-family: "Playfair Display", sans-serif;
+    overflow-wrap: break-word;
+}
+li :hover{
+    color: #4d0224;
+}
+
+
+.imgs{
+    display: grid;
+    max-height: auto;
+    grid-column: 2/5;
+    grid-area: img;
+    grid-auto-flow: column;
+    padding: 5px;
+    grid-gap: 10px;
+    justify-content: center;
+    object-fit: cover;  
+    background: #d40d6a;
+}
+
+ img{
+    height: 100%;
+    width: 100%;
+}
+.link{
+    display: grid;
+    grid-area: link;
+    grid-column: 3/4;
+    width: auto;
+    background: hsl(315, 59%, 11%);
+    justify-content: center;  
+    padding: 10px; 
+}
+
+
+
+.gif{
+    display: grid;
+    grid-area: sources;
+    justify-content: center; 
+    width: auto;
+    padding: 10px; 
+    background: #2b0b23;
+}
+
+
+.text{
+    display: grid;
+    grid-area: text;
+    max-height: auto;
+    overflow-wrap: break-word;
+}
